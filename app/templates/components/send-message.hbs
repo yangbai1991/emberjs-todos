@@ -1,0 +1,7 @@
+{{#button-with-confirmation
+  text="Click to send a message."
+  visiable=true
+  onConfirm=(action "sendMessage" "info") as 
+  |confirmValue|}}
+  {{input value=confirmValue}}
+{{/button-with-confirmation}}

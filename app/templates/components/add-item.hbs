@@ -1,0 +1,7 @@
+<form class="form-inline">
+  <div class="form-group {{if error 'has-error'}}">
+    <label class="control-label">{{error}}</label>
+    {{input type=text class="form-control" placeholder="name" value=name input=(action "required")}}
+  </div>
+  <button type="button" class="btn btn-sm btn-primary" {{action "add" name}}>Add</button>
+</form>
