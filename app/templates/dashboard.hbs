@@ -1,5 +1,59 @@
+<nav class="navbar navbar-default navbar-inverse" style="border-radius: 0;background-color: #3d4045;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+        <img alt="MaxGalary" src="/assets/images/logo.svg">
+      </a>
+      <a class="navbar-brand" href="#" style="color: #eee">
+        MaxGalary
+      </a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span></a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 <div class="container" style="padding-top: 60px;">
   {{add-item}}
 {{!--   {{log todos}} --}}
   {{item-list}}
+  {{#mg-tabs}}
+    {{#mg-tab-panel title="home" onNavClick=onNavClick}}
+      <h2>Home</h2>
+    {{/mg-tab-panel}}
+    {{#mg-tab-panel title="profile" onNavClick=onNavClick}}
+      <h2>Profile</h2>
+    {{/mg-tab-panel}}
+    {{#mg-tab-panel title="messages" active=false onNavClick=onNavClick}}
+      <h2>Messages</h2>
+    {{/mg-tab-panel}}
+    {{#mg-tab-panel title="settings" onNavClick=onNavClick}}
+      <h2>Settings</h2>
+    {{/mg-tab-panel}}
+  {{/mg-tabs}}
 </div>
+<style>
+  .navbar-brand img {
+    width: 20px;
+    height: 20px;
+  }
+  span.glyphicon-question-sign {
+      font-size: 16px;
+      color: #fff;
+      /* display: inline-block; */
+      border-right: 1px solid #aaa;
+      padding-right: 20px;
+      height: 20px;
+      /* vertical-align: middle; */
+      line-height: 20px;
+      margin-top: -2px;
+  }
+</style>

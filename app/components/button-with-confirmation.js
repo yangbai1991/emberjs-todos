@@ -16,11 +16,13 @@ export default Ember.Component.extend({
     confirm() {
       this.get('onConfirm')(this.get('confirmValue'))
         .then(info => {
-          // this.set('visiable', false);
+          this.set('visiable', false);
           console.log(info);
+          // Ember.logger.info(info);
         })
         .catch(err => {
-
+          console.log(err);
+          // Ember.logger.info(err);
         });
     }
   }

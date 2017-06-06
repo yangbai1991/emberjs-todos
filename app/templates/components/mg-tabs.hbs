@@ -1,0 +1,12 @@
+<div class="mg-tabs">
+  <ul class="nav nav-tabs">
+    {{#each panels as |panel|}}
+      <li class="{{if panel.active 'active'}}"  {{action "handleTabNavClick" panel}}>
+        <a href="javascript:void(0);">{{panel.title}}</a>
+      </li>
+    {{/each}}
+  </ul>
+  <div class="tab-content">
+    {{yield}}
+  </div>
+</div>
