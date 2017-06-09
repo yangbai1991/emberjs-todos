@@ -1,0 +1,38 @@
+.t-btn {
+  padding: 7px 22px;
+  color: #333;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 11px;
+  text-align: center;
+  outline: none;
+}
+
+.t-btn-primary {
+  background-color: #189ef9;
+  border-color: #189ef9;
+}
+
+.t-btn-urgency {
+  background-color: #f7a700;
+  border-color: #f7a700;
+}
+
+.t-btn-regular {
+  background-color: #fff;
+  border-color: #868686;
+  color: #000000;
+}
+
+.t-btn-regular:hover {
+  border-color: #666666;
+}
+
+.t-btn-lg {
+  padding: 9px 22px;
+}
+
+.t-btn-xs {
+  padding: 7px 10px;
+}
